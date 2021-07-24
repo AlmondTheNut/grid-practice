@@ -1,0 +1,23 @@
+body{
+    margin: 40px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-gap: 10px;
+}
+
+.box{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    font-size: 150%;
+}
+
+.box:nth-child(even){
+    background-color: gray;
+    color: #000;
+}
