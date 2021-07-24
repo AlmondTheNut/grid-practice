@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid red;
+        }
+        div.red.green.book{
+            background:red;
+        }
+        /* span, li.red {
+            background: purple;
+        } */
+        ul li {
+            background:red;
+        }
+        /* div b {
+            background: green;
+        } */
+        div > span{
+            background: yellow;
+        }
+        /* li.red ~ li{
+            background: orange;
+        } */
+        li.red + li{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="red green text">This is a div</div>
+    <span>This is a span</span>
+    <div>
+        <span>
+            <b>nested text</b>
+        </span>
+    </div>
+    <ul>
+        <li class="red">Itme 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</body>
+</html>

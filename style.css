@@ -1,3 +1,5 @@
+/* float overflow */
+
 * {box-sizing:border-box}
 
 .grid {
@@ -19,14 +21,56 @@
     order: 3;
     border: 1px solid rgb(0,95,107);
     border-radius: 3px;
-    background-color: rgba(0,95,107,0.8);
     padding:0.2em;
     color:#fff;
-    font-size:120%;
+    font-size:150%;
+    font-weight:bold;
+    padding:0%;
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block; /*remove extra space below image*/
+.grid div:nth-child(even) {
+    background:dodgerblue;
+    background-size: cover;
+    /* background-size: 100%;  standard: the width of hte image, height: auto*/
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.grid div:nth-child(odd) {
+    background:deepskyblue;
+    background-size: cover;
+    /* background-size: 100%;  standard: the width of hte image, height: auto*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grid div:nth-child(1){
+    background-image: url(img/almond.jpg);
+}
+.grid div:nth-child(2){
+    background-image: url(img/cashew.jpg);
+}
+.grid div:nth-child(3){
+    background-image: url(img/hazelnut.jpg);
+}
+.grid div:nth-child(4){
+    background-image: url(img/nut\ eater.jpg);
+}
+.grid div:nth-child(5){
+    background-image: url(img/peacan.jpg);
+}
+.grid div:nth-child(6){
+    background-image: url(img/peanut.jpg);
+}
+.grid div:nth-child(7){
+    background-image: url(img/pistachio.jpg);
+}
+.grid div:nth-child(8){
+    background-image: url(img/walnut.jpg);
+}
+
+/* img{
+    max-width: 100%;
+    display: block;
+    object-fit: fill;
+} */
