@@ -1,0 +1,26 @@
+body{
+    margin: 40px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, [col] 100px);
+    grid-template-rows: repeat(3,[row] auto);
+    grid-gap: 10px;
+    grid-auto-flow: row;
+}
+
+.box{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #444;
+    padding: 20px;
+    font-size: 150%;
+    color: white;
+}
+
+.a{grid-column: col / span 2;}
+.b{grid-column: col 3 / span 2;}
+.c{grid-column: col / span 1;}
+.d{grid-column: col 2/ span 3;}
+.e{grid-column: col / span 4;}
